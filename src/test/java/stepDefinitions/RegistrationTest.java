@@ -17,7 +17,7 @@ import pageObjects.signUpPage;
 import testBase.TestBase;
 
 public class RegistrationTest extends TestBase {
-	RegistrationPage RegPage;
+	
 	
 	public RegistrationTest(){
 		super();
@@ -25,14 +25,14 @@ public class RegistrationTest extends TestBase {
 		signUpPage.initElements();
 		RegistrationPage.RegPageinitElements();
 		LoginPage.loginInitElements();
-		RegPage=new RegistrationPage();
+		
 		
 	}
 	
 	@Given("^the user is on registration page$")
 	public void the_user_is_on_registration_page() throws Throwable {
-		RegPage=SignUpMethods.signUp();
-	    System.out.println("We are on Registration Page");
+		SignUpMethods.signUp();
+	    System.out.println("We are on Registration Page" );
 	    
 	}
 	

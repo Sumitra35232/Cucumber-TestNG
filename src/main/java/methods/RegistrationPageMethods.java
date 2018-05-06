@@ -10,11 +10,7 @@ import testBase.TestBase;
 public class RegistrationPageMethods{
 	public static MyAccoutHomePage homepage;
 	
-	public RegistrationPageMethods()
-	{
-		super();
-	}
-
+	
 public static String validateRegistrationPageTitle(){
 		
 		return TestBase.driver.getTitle();

@@ -24,8 +24,7 @@ Then I fill in all mandatory details
 When I click on Register button and redirected to MyAccount Home Page
 Examples:
 | customerEmail | title | customerFName | customerLName | pwd | addrFName | addrLName | addr1 | city | state | zip | mobile |
-| customer100@gmail.com | Mr | John | Smith | password1 | John | Smith | Address1 | City1 | Arizona | 12345 | 98765 |
-| customer101@gmail.com | Mr | John | Smith | password1 | John | Smith | Address1 | City1 | Arizona | 12345 | 98765 |
-| customer102@gmail.com | Mr | John | Smith | password1 | John | Smith | Address1 | City1 | Arizona | 12345 | 98765 |
+| customer501@gmail.com | Mr | John | Smith | password1 | John | Smith | Address1 | City1 | Arizona | 12345 | 98765 |
+
 
 
