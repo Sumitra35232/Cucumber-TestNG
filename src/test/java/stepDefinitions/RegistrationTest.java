@@ -42,32 +42,32 @@ public class RegistrationTest extends TestBase {
 		RegistrationPage.emailAddress.sendKeys(customerEmail);
 	}
 	
-	@Then("^I fill all mandatory details  with parameters as \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" , \"([^\"]*)\"$")
-	public void i_fill_all_mandatory_details_with_parameters_as( String title, String customerFirstName, String customerLastName, String password, String addrFirstName, String addrLastName, String addr1, String city, String state, String zip, String mobile) throws Throwable {
-	    
-		
-		
-		if("Mr".equals(title))
-		{
-			RegistrationPage.MrRadioBton.click();
-		}else if("Mrs".equals(title))
-		{
-			RegistrationPage.MrsRadioBton.click();
-		}
-		RegistrationPage.customerFirstName.sendKeys(customerFirstName);
-		RegistrationPage.customerLastName.sendKeys(customerLastName);
-		RegistrationPage.password.sendKeys(password);
-		RegistrationPage.addrFirstName.sendKeys(addrFirstName);
-		RegistrationPage.addrLastName.sendKeys(addrLastName);
-		RegistrationPage.addr1.sendKeys(addr1);
-		RegistrationPage.city.sendKeys(city);
-		Select state1=new Select(RegistrationPage.stateLocator);
-		state1.selectByVisibleText(state);
-//		RegistrationPage.state.sendKeys(state);
-		RegistrationPage.zipCode.sendKeys(zip);
-		RegistrationPage.Mobile.sendKeys(mobile);
-		
-	}
+//	@Then("^I fill all mandatory details  with parameters as \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" , \"([^\"]*)\"$")
+//	public void i_fill_all_mandatory_details_with_parameters_as( String title, String customerFirstName, String customerLastName, String password, String addrFirstName, String addrLastName, String addr1, String city, String state, String zip, String mobile) throws Throwable {
+//	    
+//		
+//		
+//		if("Mr".equals(title))
+//		{
+//			RegistrationPage.MrRadioBton.click();
+//		}else if("Mrs".equals(title))
+//		{
+//			RegistrationPage.MrsRadioBton.click();
+//		}
+//		RegistrationPage.customerFirstName.sendKeys(customerFirstName);
+//		RegistrationPage.customerLastName.sendKeys(customerLastName);
+//		RegistrationPage.password.sendKeys(password);
+//		RegistrationPage.addrFirstName.sendKeys(addrFirstName);
+//		RegistrationPage.addrLastName.sendKeys(addrLastName);
+//		RegistrationPage.addr1.sendKeys(addr1);
+//		RegistrationPage.city.sendKeys(city);
+//		Select state1=new Select(RegistrationPage.stateLocator);
+//		state1.selectByVisibleText(state);
+////		RegistrationPage.state.sendKeys(state);
+//		RegistrationPage.zipCode.sendKeys(zip);
+//		RegistrationPage.Mobile.sendKeys(mobile);
+//		
+//	}
 
 
 
@@ -105,8 +105,132 @@ public class RegistrationTest extends TestBase {
 	}
 	
 	
+	@Then("^I fill in all mandatory details$")
+	public void i_fill_in_all_mandatory_details(List<userDetails>  data) throws Throwable {
+		
+		for (userDetails details : data) {			
+		
+			if("Mr".equals(details.getTitle()))
+			{
+				RegistrationPage.MrRadioBton.click();
+			}else if("Mrs".equals(details.getTitle()))
+			{
+				RegistrationPage.MrsRadioBton.click();
+			}
+			RegistrationPage.customerFirstName.sendKeys(details.getCustomerFirstName());
+			RegistrationPage.customerLastName.sendKeys(details.getCustomerLastName());
+			RegistrationPage.password.sendKeys(details.getpassword());
+			RegistrationPage.addrFirstName.sendKeys(details.getaddrFirstName());
+			RegistrationPage.addrLastName.sendKeys(details.getaddrLastName());
+			RegistrationPage.addr1.sendKeys(details.getaddr1());
+			RegistrationPage.city.sendKeys(details.getcity());
+			Select state1=new Select(RegistrationPage.stateLocator);
+			state1.selectByVisibleText(details.getstate());
+//			RegistrationPage.state.sendKeys(state);
+			RegistrationPage.zipCode.sendKeys(details.getzip());
+			RegistrationPage.Mobile.sendKeys(details.getmobile());
+			
+			}	
+		
+		
+	    }
+	
+	public class userDetails
+	{
+		
+		private String title;
+        private String customerFirstName;
+        private String customerLastName;
+        private String password;
+        private String addrFirstName;
+        private String addrLastName;
+        private String addr1;
+        private String city;
+        private String state;
+        private String zip;
+        private String mobile;
+        
+		public String getTitle() {
+            return title;
+        }
+        public void setTitle(String title) {
+            this.title = title;
+        }
+        public String getCustomerFirstName() {
+            return customerFirstName;
+        }
+        public void setCustomerFirstName(String customerFirstName) {
+            this.customerFirstName = customerFirstName;
+        }
+        public String getCustomerLastName() {
+            return customerLastName;
+        }
+        public void setCustomerLastName(String customerLastName) {
+            this.customerLastName = customerLastName;
+        }
+        public String getpassword() {
+            return password;
+        }
+        public void setpassword(String password) {
+            this.password = password;
+        }
+        public String getaddrLastName() {
+            return addrLastName;
+        }
+        public void setaddrLastName(String addrLastName) {
+            this.addrLastName = addrLastName;
+        }
+        public String getaddrFirstName() {
+            return addrFirstName;
+        }
+        public void setaddrFirstName(String addrFirstName) {
+            this.addrFirstName = addrFirstName;
+        }
+        public String getaddr1() {
+            return addr1;
+        }
+        public void setaddr1(String addr1) {
+            this.addr1 = addr1;
+        }
+        public String getcity() {
+            return city;
+        }
+        public void setcity(String city){
+            this.city= city;
+        }
+        public String getstate() {
+            return state;
+        }
+        public void setstate(String state){
+            this.state= state;
+        }
+        public String getzip() {
+            return zip;
+        }
+        public void setzip(String zip){
+            this.zip = zip;
+        }
+        public String getmobile() {
+            return mobile;
+        }
+        public void setmobile(String mobile){
+            this.mobile = mobile;
+        }
+       
+        
+        @Override
+        public String toString() {
+            
+            return "userDetails [title=" + title + ", customerFirstName="
+            + customerFirstName + ", customerLastName="
+            + customerLastName + ",password=" + password + ",addrFirstName=" + addrFirstName + ",addrLastName=" + addrLastName + ",addr1=" + addr1 + ",city=" + city + ",state=" + state + ",zip=" + zip + ",mobile=" + mobile + "]";
+        }            
+	}
+	}
+	
+	
 
 
 
 
-}
+

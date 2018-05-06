@@ -1,10 +1,13 @@
 package testBase;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,8 +29,9 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			String path="C:/Users/neha.257014/WorkspaceDemo/CucumberJVM-POM-master/CucumberJVM-POM-master/src/main/java/config/config.properties";
-			FileInputStream ip = new FileInputStream(path);
+//			String path="C:/WorkspaceInfy/AutomationDemo/src/main/java/config/config.properties";
+//			FileInputStream ip = new FileInputStream(path);
+			InputStream ip=this.getClass().getClassLoader().getResourceAsStream("config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

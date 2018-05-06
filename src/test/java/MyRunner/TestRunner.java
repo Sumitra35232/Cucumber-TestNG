@@ -14,8 +14,10 @@ import testBase.TestBase;
 @CucumberOptions(
         features = "src/test/resources/Features",
         glue= {"stepDefinitions"},
-        tags= {"@Demo"},
-        plugin= {"pretty","html:target/cucumber-html-reports"},
+        tags= {"@Report"},
+        plugin= { "pretty",
+        	    "html:target/site/cucumber-pretty",
+        "json:target/cucumber.json" },
         monochrome = true
         
         )

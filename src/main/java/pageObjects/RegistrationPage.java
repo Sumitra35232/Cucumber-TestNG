@@ -35,8 +35,6 @@ public static WebElement customerEmail;
 @FindBy(id="passwd")
 public static WebElement password;
 
-@FindBy(id="id_gender2")
-public static WebElement dob;
 
 @FindBy(id="firstname")
 public static WebElement addrFirstName;
