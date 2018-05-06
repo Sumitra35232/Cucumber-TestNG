@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Step Overview</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>2</td>
+                        <td>06 May 2018, 21:59</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Step Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+
+<div class="container-fluid" id="report-details">
+  <table id="tablesorter" class="stats-table">
+
+    <thead>
+      <tr class="header">
+        <th id="stats-header-feature">Implementation</th>
+        <th id="stats-header-occurrences">Occurrences</th>
+        <th id="stats-header-duration">Duration</th>
+        <th id="stats-header-average">Average</th>
+        <th id="stats-header-status">Ratio</th>
+      </tr>
+    </thead>
+
+    <tbody>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.the_user_is_on_registration_page()</td>
+          <td>5</td>
+          <td class="duration-format">4m 25s 124ms</td>
+          <td class="duration-format">53s 024ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest$userDetails>)</td>
+          <td>1</td>
+          <td class="duration-format">50s 120ms</td>
+          <td class="duration-format">50s 120ms</td>
+          <td class="failed">0.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SignUpTest.user_is_present_in_automationpractice_website()</td>
+          <td>1</td>
+          <td class="duration-format">42s 449ms</td>
+          <td class="duration-format">42s 449ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_enter_login_credentials_and_click_on_submit_button(DataTable)</td>
+          <td>3</td>
+          <td class="duration-format">28s 962ms</td>
+          <td class="duration-format">09s 654ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses()</td>
+          <td>2</td>
+          <td class="duration-format">21s 822ms</td>
+          <td class="duration-format">10s 911ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">Hooks.tearDown()</td>
+          <td>6</td>
+          <td class="duration-format">13s 818ms</td>
+          <td class="duration-format">02s 303ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SummerDressesTest.i_select_a_particular_dress()</td>
+          <td>2</td>
+          <td class="duration-format">12s 132ms</td>
+          <td class="duration-format">06s 066ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">CheckoutTest.i_proceed_to_checkout()</td>
+          <td>1</td>
+          <td class="duration-format">04s 682ms</td>
+          <td class="duration-format">04s 682ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">AddToCartTest.i_change_the_colour_to_blue()</td>
+          <td>2</td>
+          <td class="duration-format">02s 366ms</td>
+          <td class="duration-format">01s 183ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SignUpTest.user_clicks_on_Sign_Up()</td>
+          <td>1</td>
+          <td class="duration-format">02s 291ms</td>
+          <td class="duration-format">02s 291ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">CheckoutTest.i_verify_details_on_shopping_cart_summary_page()</td>
+          <td>1</td>
+          <td class="duration-format">02s 078ms</td>
+          <td class="duration-format">02s 078ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_validate_the_error_message_received()</td>
+          <td>1</td>
+          <td class="duration-format">895ms</td>
+          <td class="duration-format">895ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">AddToCartTest.i_add_the_item_to_cart()</td>
+          <td>2</td>
+          <td class="duration-format">825ms</td>
+          <td class="duration-format">412ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_enter_an_already_registered_emailID(DataTable)</td>
+          <td>1</td>
+          <td class="duration-format">716ms</td>
+          <td class="duration-format">716ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_click_on_CreateAccount_button()</td>
+          <td>2</td>
+          <td class="duration-format">567ms</td>
+          <td class="duration-format">283ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page()</td>
+          <td>2</td>
+          <td class="duration-format">457ms</td>
+          <td class="duration-format">228ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_enter_email_address_of_new_user_as(String)</td>
+          <td>1</td>
+          <td class="duration-format">376ms</td>
+          <td class="duration-format">376ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SignUpTest.user_should_get_redirected_to_Registartion_Page()</td>
+          <td>1</td>
+          <td class="duration-format">103ms</td>
+          <td class="duration-format">103ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">RegistrationTest.i_click_on_Register_button_and_redirected_to_MyAccount_Home_Page()</td>
+          <td>1</td>
+          <td class="duration-format">000ms</td>
+          <td class="duration-format">000ms</td>
+          <td class="failed">0.0%</td>
+        </tr>
+          </tbody>
+
+    <tfoot>
+      <tr>
+        <td>19</td>
+        <td>36</td>
+        <td class="duration-format">7m 29s 792ms</td>
+        <td class="duration-format">12s 494ms</td>
+        <td>Totals</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

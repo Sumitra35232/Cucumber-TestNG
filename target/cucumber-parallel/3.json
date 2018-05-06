@@ -1,0 +1,420 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 70351407564,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on registration page",
+            "match": {
+              "location": "RegistrationTest.the_user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "To test unsuccessful registration of an already registered user",
+        "description": "",
+        "id": "registration-feature;to-test-unsuccessful-registration-of-an-already-registered-user",
+        "after": [
+          {
+            "result": {
+              "duration": 1343679751,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 231050974,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter  an already registered emailID",
+            "match": {
+              "location": "RegistrationTest.i_enter_an_already_registered_emailID(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "registeredEmail"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "customer1@gmail.com"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5197882498,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on CreateAccount button",
+            "match": {
+              "location": "RegistrationTest.i_click_on_CreateAccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 839454463,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I validate the error message received",
+            "match": {
+              "location": "RegistrationTest.i_validate_the_error_message_received()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@ExistingUserRegistration"
+          },
+          {
+            "line": 8,
+            "name": "@Demo"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 45001141205,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on registration page",
+            "match": {
+              "location": "RegistrationTest.the_user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Test successful registration of a new user",
+        "description": "",
+        "id": "registration-feature;test-successful-registration-of-a-new-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 664919902,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 360949483,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter email address of new user as \"customer501@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer501@gmail.com",
+                  "offset": 38
+                }
+              ],
+              "location": "RegistrationTest.i_enter_email_address_of_new_user_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 213601321,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on CreateAccount button",
+            "match": {
+              "location": "RegistrationTest.i_click_on_CreateAccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50337848292,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"id_gender1\"}\n  (Session info: chrome\u003d66.0.3359.139)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.7.1\u0027, revision: \u00278a0099a\u0027, time: \u00272017-11-06T21:01:39.354Z\u0027\nSystem info: host: \u0027DESKTOP-K9519T8\u0027, ip: \u0027192.168.0.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_151\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\\Users\\SHRAWA~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}\nSession ID: e5f30f37815b6c85dbb1685fc8dadb2c\n*** Element info: {Using\u003did, value\u003did_gender1}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:109)\r\n\tat com.sun.proxy.$Proxy16.findElement(Unknown Source)\r\n\tat org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:193)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat stepDefinitions.RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest.java:115)\r\n\tat ✽.Then I fill in all mandatory details(C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/Registration.feature:21)\r\n",
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "I fill in all mandatory details",
+            "match": {
+              "location": "RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest$userDetails\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "customerFirstName",
+                  "customerLastName",
+                  "password",
+                  "addrFirstName",
+                  "addrLastName",
+                  "addr1",
+                  "city",
+                  "state",
+                  "zip",
+                  "mobile"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Mr",
+                  "John",
+                  "Smith",
+                  "password1",
+                  "John",
+                  "Smith",
+                  "Address1",
+                  "City1",
+                  "Arizona",
+                  "12345",
+                  "98765"
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I click on Register button and redirected to MyAccount Home Page",
+            "match": {
+              "location": "RegistrationTest.i_click_on_Register_button_and_redirected_to_MyAccount_Home_Page()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Demo"
+          },
+          {
+            "line": 17,
+            "name": "@TestIt"
+          }
+        ]
+      }
+    ],
+    "name": "Registration feature",
+    "description": "",
+    "id": "registration-feature",
+    "keyword": "Feature",
+    "uri": "C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/Registration.feature"
+  }
+], mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}\nSession ID: d5a86a2f38e5a5cef3e133e7b7b2e00b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:376)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:389)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat methods.SignUpMethods.signUp(SignUpMethods.java:22)\r\n\tat stepDefinitions.RegistrationTest.the_user_is_on_registration_page(RegistrationTest.java:34)\r\n\tat ✽.Given the user is on registration page(C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/Registration.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "the user is on registration page",
+            "match": {
+              "location": "RegistrationTest.the_user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Test successful registration of a new user",
+        "description": "",
+        "id": "registration-feature;test-successful-registration-of-a-new-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4883728103,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I enter email address of new user as \"customer501@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer501@gmail.com",
+                  "offset": 38
+                }
+              ],
+              "location": "RegistrationTest.i_enter_email_address_of_new_user_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I click on CreateAccount button",
+            "match": {
+              "location": "RegistrationTest.i_click_on_CreateAccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I fill in all mandatory details",
+            "match": {
+              "location": "RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest$userDetails\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "customerFirstName",
+                  "customerLastName",
+                  "password",
+                  "addrFirstName",
+                  "addrLastName",
+                  "addr1",
+                  "city",
+                  "state",
+                  "zip",
+                  "mobile"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Mr",
+                  "John",
+                  "Smith",
+                  "password1",
+                  "John",
+                  "Smith",
+                  "Address1",
+                  "City1",
+                  "Arizona",
+                  "12345",
+                  "98765"
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I click on Register button and redirected to MyAccount Home Page",
+            "match": {
+              "location": "RegistrationTest.i_click_on_Register_button_and_redirected_to_MyAccount_Home_Page()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Demo"
+          },
+          {
+            "line": 17,
+            "name": "@TestIt"
+          }
+        ]
+      }
+    ],
+    "name": "Registration feature",
+    "description": "",
+    "id": "registration-feature",
+    "keyword": "Feature",
+    "uri": "C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/Registration.feature"
+  }
+]

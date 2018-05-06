@@ -1,0 +1,171 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "To verify summer dress page",
+        "description": "",
+        "id": "checkout-feature;to-verify-summer-dress-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1172270655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59802594547,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on registration page",
+            "match": {
+              "location": "RegistrationTest.the_user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56793393961,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter login credentials and click on submit button",
+            "match": {
+              "location": "RegistrationTest.i_enter_login_credentials_and_click_on_submit_button(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "customer2@gmail.com",
+                  "password1"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18873274248,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I go to Summer Dresses Page from menu Dresses-\u003eSummer Dresses",
+            "match": {
+              "location": "SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18042230780,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select  a particular dress",
+            "match": {
+              "location": "SummerDressesTest.i_select_a_particular_dress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22027327,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify if I am landed on AddToCart page",
+            "match": {
+              "location": "AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4351714970,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I change the colour to blue",
+            "match": {
+              "location": "AddToCartTest.i_change_the_colour_to_blue()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3726521363,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I add the item to cart",
+            "match": {
+              "location": "AddToCartTest.i_add_the_item_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8978300128,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "CheckoutTest.i_proceed_to_checkout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 409831641,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify details on shopping cart summary page",
+            "match": {
+              "location": "CheckoutTest.i_verify_details_on_shopping_cart_summary_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@CheckOut"
+          },
+          {
+            "line": 3,
+            "name": "@Demo"
+          },
+          {
+            "line": 3,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "CheckOut feature",
+    "description": "",
+    "id": "checkout-feature",
+    "keyword": "Feature",
+    "uri": "C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/CheckOut.feature"
+  }
+]

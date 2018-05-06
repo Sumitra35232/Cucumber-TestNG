@@ -1,0 +1,186 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 46401033048,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on registration page",
+            "match": {
+              "location": "RegistrationTest.the_user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2185130296,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter login credentials and click on submit button",
+            "match": {
+              "location": "RegistrationTest.i_enter_login_credentials_and_click_on_submit_button(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "customer2@gmail.com",
+                  "password1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4992821199,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to Summer Dresses Page from menu Dresses-\u003eSummer Dresses",
+            "match": {
+              "location": "SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 10,
+            "value": "#@SummerDress @Demo"
+          },
+          {
+            "line": 11,
+            "value": "#Scenario: To verify sort by price ascending works properly"
+          },
+          {
+            "line": 12,
+            "value": "#Then I select sort by price Lowest first to check its sorted properly"
+          },
+          {
+            "line": 13,
+            "value": "#"
+          },
+          {
+            "line": 14,
+            "value": "#"
+          },
+          {
+            "line": 15,
+            "value": "#@SummerDress @Demo"
+          },
+          {
+            "line": 16,
+            "value": "#Scenario: To verify sort by price descending works properly"
+          },
+          {
+            "line": 17,
+            "value": "#Then I select sort by price Highest first to check its sorted properly"
+          }
+        ],
+        "line": 20,
+        "name": "To verify user selects a dress and change color to Blue",
+        "description": "",
+        "id": "summer-dresses;to-verify-user-selects-a-dress-and-change-color-to-blue",
+        "after": [
+          {
+            "result": {
+              "duration": 799998560,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4875836305,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I select  a particular dress",
+            "match": {
+              "location": "SummerDressesTest.i_select_a_particular_dress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27695315,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I verify if I am landed on AddToCart page",
+            "match": {
+              "location": "AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 326953891,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I change the colour to blue",
+            "match": {
+              "location": "AddToCartTest.i_change_the_colour_to_blue()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 258356119,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I add the item to cart",
+            "match": {
+              "location": "AddToCartTest.i_add_the_item_to_cart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@SummerDress"
+          },
+          {
+            "line": 19,
+            "name": "@Demo"
+          }
+        ]
+      }
+    ],
+    "name": "Summer Dresses",
+    "description": "",
+    "id": "summer-dresses",
+    "keyword": "Feature",
+    "uri": "C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/SummerDresses.feature"
+  }
+]
