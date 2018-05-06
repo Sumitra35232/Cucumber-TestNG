@@ -10,10 +10,10 @@ public class MyAccoutHomePage extends TestBase {
 
 	
 	
-	@FindBy(linkText="Dresses")
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[2]/a")
 	public static WebElement MenuDresses;
 	
-	@FindBy(linkText="Summer Dresses")
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[2]/ul/li[3]/a")
 	public static WebElement SummerDresses;
 	
 	public static void homePageInitElements()

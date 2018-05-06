@@ -1,4 +1,4 @@
-Feature: To verify Sign Up feature
+Feature: Sign Up feature
 
 @Registration @Demo
 Scenario: To verify successful sign up

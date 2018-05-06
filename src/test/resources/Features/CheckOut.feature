@@ -1,4 +1,4 @@
-Feature: Summer Dresses
+Feature:  CheckOut feature
 
 @CheckOut @Demo @Test
 Scenario: To verify summer dress page
