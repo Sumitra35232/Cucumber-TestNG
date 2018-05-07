@@ -13,52 +13,58 @@ import pageObjects.AddToCartPage;
 import pageObjects.SummerDressesPage;
 import testBase.TestBase;
 
-public class SummerDressesPageMethods {
+public class SummerDressesPageMethods extends TestBase {
 
-	public static void sortByAsc()
+	public static void sortByAsc() throws InterruptedException
 	{
 		Select sortByPrice=new Select(SummerDressesPage.sortBy);
 		sortByPrice.selectByVisibleText("Price: Lowest first");
-		System.out.println("Size of price is" +SummerDressesPage.price.size());
+		Thread.sleep(5000);
+		System.out.println("Size of price is " +SummerDressesPage.price.size());
 		List<String> prices = new ArrayList<String>();
 		for (WebElement e : SummerDressesPage.price)
 		{
-			System.out.println("Values in price is" +e.getText());
+			System.out.println("Values in price is " +e.getText());
 		    prices.add(e.getText());
 		}
 
-		// make a copy of the list
-		List<String> sortedPrices = new ArrayList<String>(prices);
+		
+		List<String> sortedPrices = new ArrayList<String>();
+		for(String s:prices){
+			sortedPrices.add(s);
+			}
 
-		// sort the list
+		
 		Collections.sort(sortedPrices);
+		Assert.assertTrue(sortedPrices.equals(prices));
 
-		// true if the prices are sorted
-//		System.out.println(sortedPrices.equals(prices));
-		Assert.assertEquals(sortedPrices, prices);
+
+		
 	}
 	
-	public static void sortByDesc()
+	public static void sortByDesc() throws InterruptedException
 	{
 		Select sortByPrice=new Select(SummerDressesPage.sortBy);
 		sortByPrice.selectByVisibleText("Price: Highest first");
-		
+		Thread.sleep(5000);
+		System.out.println("Size of price is " +SummerDressesPage.price.size());
 		List<String> prices = new ArrayList<String>();
 		for (WebElement e : SummerDressesPage.price)
 		{
+			System.out.println("Values in price is " +e.getText());
 		    prices.add(e.getText());
 		}
 
-		// make a copy of the list
+		
 		List<String> sortedPrices = new ArrayList<String>(prices);
 
-		// sort the list
+		
 		Collections.sort(sortedPrices);
 		Collections.reverse(sortedPrices);
 
-		// true if the prices are sorted
+		
 		System.out.println(sortedPrices.equals(prices));
-		Assert.assertEquals(sortedPrices, prices);
+		Assert.assertTrue(sortedPrices.equals(prices));
 	}
 	
 	public static AddToCartPage chooseDress()

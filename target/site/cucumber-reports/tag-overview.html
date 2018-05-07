@@ -26,8 +26,8 @@ $(document).ready(function() {
 <script type="text/javascript">
     jQuery(document).ready(function() {
 
-        var chartData = [[9,0,0,0],[21,1,1,0],[3,0,0,0],[3,0,0,0],[2,0,0,0],[4,0,0,0],[9,0,0,0],[2,1,1,0]],
-            chartCategory = ['@CheckOut','@Demo','@ExistingUserRegistration','@Registration','@Report','@SummerDress','@Test','@TestIt'],
+        var chartData = [[0,1,8,0],[10,4,12,0],[2,0,0,0],[0,1,2,0],[1,2,2,0],[7,0,0,0]],
+            chartCategory = ['@CheckOut','@Demo','@Login','@SignUp','@SummerDress','@UserRegistration'],
             formattedData = [
                 {
                     name: "Passed",
@@ -89,7 +89,7 @@ $(document).ready(function() {
                 }
             },
             xAxis: {
-                categories: ['@CheckOut','@Demo','@ExistingUserRegistration','@Registration','@Report','@SummerDress','@Test','@TestIt']
+                categories: ['@CheckOut','@Demo','@Login','@SignUp','@SummerDress','@UserRegistration']
             },
             yAxis: {
                 min: 0,
@@ -154,8 +154,8 @@ $(document).ready(function() {
         <tbody>
           <tr class="info">
             <td>cucumber-jvm-example</td>
-                          <td>2</td>
-                        <td>06 May 2018, 21:59</td>
+                          <td>3</td>
+                        <td>07 May 2018, 14:22</td>
           </tr>
         </tbody>
       </table>
@@ -205,65 +205,35 @@ $(document).ready(function() {
                   <tr>
             <td class="tagname"><a href="CheckOut.html">@CheckOut</a></td>
             <td>1</td>
-            <td>1</td>
             <td>0</td>
+            <td>1</td>
             <td>9</td>
-            <td>9</td>
+            <td>0</td>
+            <td   class="failed" >1</td>
+            <td    class="skipped" >8</td>
             <td >0</td>
             <td >0</td>
             <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td class="duration-format">2m 07s 151ms</td>
-            <td class="passed">Passed</td>
+            <td class="duration-format">1m 11s 336ms</td>
+            <td class="failed">Failed</td>
           </tr>
                   <tr>
             <td class="tagname"><a href="Demo.html">@Demo</a></td>
-            <td>5</td>
+            <td>7</td>
+            <td>3</td>
             <td>4</td>
-            <td>1</td>
-            <td>23</td>
-            <td>21</td>
-            <td   class="failed" >1</td>
-            <td    class="skipped" >1</td>
+            <td>26</td>
+            <td>10</td>
+            <td   class="failed" >4</td>
+            <td    class="skipped" >12</td>
             <td >0</td>
             <td >0</td>
             <td >0</td>
-            <td class="duration-format">3m 47s 370ms</td>
+            <td class="duration-format">4m 10s 510ms</td>
             <td class="failed">Failed</td>
           </tr>
                   <tr>
-            <td class="tagname"><a href="ExistingUserRegistration.html">@ExistingUserRegistration</a></td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>3</td>
-            <td>3</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td class="duration-format">01s 888ms</td>
-            <td class="passed">Passed</td>
-          </tr>
-                  <tr>
-            <td class="tagname"><a href="Registration.html">@Registration</a></td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>3</td>
-            <td>3</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td class="duration-format">44s 844ms</td>
-            <td class="passed">Passed</td>
-          </tr>
-                  <tr>
-            <td class="tagname"><a href="Report.html">@Report</a></td>
+            <td class="tagname"><a href="Login.html">@Login</a></td>
             <td>1</td>
             <td>1</td>
             <td>0</td>
@@ -274,70 +244,70 @@ $(document).ready(function() {
             <td >0</td>
             <td >0</td>
             <td >0</td>
-            <td class="duration-format">1m 06s 189ms</td>
+            <td class="duration-format">1m 22s 569ms</td>
             <td class="passed">Passed</td>
+          </tr>
+                  <tr>
+            <td class="tagname"><a href="SignUp.html">@SignUp</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>0</td>
+            <td   class="failed" >1</td>
+            <td    class="skipped" >2</td>
+            <td >0</td>
+            <td >0</td>
+            <td >0</td>
+            <td class="duration-format">1m 04s 481ms</td>
+            <td class="failed">Failed</td>
           </tr>
                   <tr>
             <td class="tagname"><a href="SummerDress.html">@SummerDress</a></td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>4</td>
-            <td>4</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td class="duration-format">02s 698ms</td>
-            <td class="passed">Passed</td>
-          </tr>
-                  <tr>
-            <td class="tagname"><a href="Test.html">@Test</a></td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>9</td>
-            <td>9</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td >0</td>
-            <td class="duration-format">2m 07s 151ms</td>
-            <td class="passed">Passed</td>
-          </tr>
-                  <tr>
-            <td class="tagname"><a href="TestIt.html">@TestIt</a></td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>4</td>
             <td>2</td>
-            <td   class="failed" >1</td>
-            <td    class="skipped" >1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>5</td>
+            <td>1</td>
+            <td   class="failed" >2</td>
+            <td    class="skipped" >2</td>
             <td >0</td>
             <td >0</td>
             <td >0</td>
-            <td class="duration-format">50s 788ms</td>
+            <td class="duration-format">09s 165ms</td>
             <td class="failed">Failed</td>
+          </tr>
+                  <tr>
+            <td class="tagname"><a href="UserRegistration.html">@UserRegistration</a></td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>7</td>
+            <td>7</td>
+            <td >0</td>
+            <td >0</td>
+            <td >0</td>
+            <td >0</td>
+            <td >0</td>
+            <td class="duration-format">22s 957ms</td>
+            <td class="passed">Passed</td>
           </tr>
               </tbody>
   
       <tfoot>
         <tr>
+          <td>6</td>
+          <td>14</td>
+          <td>6</td>
           <td>8</td>
-          <td>12</td>
-          <td>10</td>
-          <td>2</td>
-          <td>57</td>
-          <td>53</td>
-          <td>2</td>
-          <td>2</td>
+          <td>52</td>
+          <td>20</td>
+          <td>8</td>
+          <td>24</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
-          <td class="duration-format">10m 48s 081ms</td>
+          <td class="duration-format">8m 21s 020ms</td>
           <td>Totals</td>
         </tr>
       </tfoot>

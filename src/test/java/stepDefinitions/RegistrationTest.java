@@ -42,32 +42,7 @@ public class RegistrationTest extends TestBase {
 		RegistrationPage.emailAddress.sendKeys(customerEmail);
 	}
 	
-//	@Then("^I fill all mandatory details  with parameters as \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" , \"([^\"]*)\"$")
-//	public void i_fill_all_mandatory_details_with_parameters_as( String title, String customerFirstName, String customerLastName, String password, String addrFirstName, String addrLastName, String addr1, String city, String state, String zip, String mobile) throws Throwable {
-//	    
-//		
-//		
-//		if("Mr".equals(title))
-//		{
-//			RegistrationPage.MrRadioBton.click();
-//		}else if("Mrs".equals(title))
-//		{
-//			RegistrationPage.MrsRadioBton.click();
-//		}
-//		RegistrationPage.customerFirstName.sendKeys(customerFirstName);
-//		RegistrationPage.customerLastName.sendKeys(customerLastName);
-//		RegistrationPage.password.sendKeys(password);
-//		RegistrationPage.addrFirstName.sendKeys(addrFirstName);
-//		RegistrationPage.addrLastName.sendKeys(addrLastName);
-//		RegistrationPage.addr1.sendKeys(addr1);
-//		RegistrationPage.city.sendKeys(city);
-//		Select state1=new Select(RegistrationPage.stateLocator);
-//		state1.selectByVisibleText(state);
-////		RegistrationPage.state.sendKeys(state);
-//		RegistrationPage.zipCode.sendKeys(zip);
-//		RegistrationPage.Mobile.sendKeys(mobile);
-//		
-//	}
+
 
 
 
@@ -126,7 +101,6 @@ public class RegistrationTest extends TestBase {
 			RegistrationPage.city.sendKeys(details.getcity());
 			Select state1=new Select(RegistrationPage.stateLocator);
 			state1.selectByVisibleText(details.getstate());
-//			RegistrationPage.state.sendKeys(state);
 			RegistrationPage.zipCode.sendKeys(details.getzip());
 			RegistrationPage.Mobile.sendKeys(details.getmobile());
 			

@@ -1,7 +1,7 @@
 Feature: Login feature
 
 
-@Report
+@Login @Demo
 Scenario: Verify user is signed in
 Given the user is on registration page
 Then I enter login credentials and click on submit button

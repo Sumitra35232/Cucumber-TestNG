@@ -3,13 +3,13 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="MyRunner.TestRunner">
+      <class name="Parallel10IT">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="2"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- MyRunner.TestRunner -->
+      </class> <!-- Parallel10IT -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

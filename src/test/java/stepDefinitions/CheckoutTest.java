@@ -7,7 +7,6 @@ import cucumber.api.java.en.Then;
 import methods.CheckOutMethod;
 import pageObjects.AddToCartPage;
 import pageObjects.CheckoutPage;
-import pageObjects.SummerDressesPage;
 import testBase.TestBase;
 
 

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,39 +102,10 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="MyRunner.TestRunner" hash-for-method="feature(Registration feature)">feature(Registration feature)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Parallel10IT" hash-for-method="feature(Summer Dresses)">feature(Summer Dresses)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="MyRunner.TestRunner" hash-for-method="feature(Summer Dresses)">feature(Summer Dresses)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="MyRunner.TestRunner" hash-for-method="feature(CheckOut feature)">feature(CheckOut feature)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="MyRunner.TestRunner" hash-for-method="feature(Login feature)">feature(Login feature)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="MyRunner.TestRunner" hash-for-method="feature(Sign Up feature)">feature(Sign Up feature)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -149,16 +120,16 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">MyRunner.TestRunner</span>
+              <span class="class-name">Parallel10IT</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Registration feature)">
-                  </a> <!-- feature(Registration feature) -->
+                  <a name="feature(Summer Dresses)">
+                  </a> <!-- feature(Summer Dresses) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Registration feature)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;id_gender1&quot;}
+                  <span class="parameters">(Summer Dresses)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;block_top_menu&apos;]/ul/li[2]/a&quot;}
   (Session info: chrome=66.0.3359.139)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -167,11 +138,11 @@ Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &ap
 System info: host: &apos;DESKTOP-K9519T8&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
-*** Element info: {Using=id, value=id_gender1}
+Session ID: f92d3703e4ec13bb1a55c083ffd789dc
+*** Element info: {Using=xpath, value=//div[@id=&apos;block_top_menu&apos;]/ul/li[2]/a}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;id_gender1&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;block_top_menu&apos;]/ul/li[2]/a&quot;}
   (Session info: chrome=66.0.3359.139)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -180,8 +151,8 @@ Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &ap
 System info: host: &apos;DESKTOP-K9519T8&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
-*** Element info: {Using=id, value=id_gender1}
+Session ID: f92d3703e4ec13bb1a55c083ffd789dc
+*** Element info: {Using=xpath, value=//div[@id=&apos;block_top_menu&apos;]/ul/li[2]/a}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -191,18 +162,20 @@ Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:109)
-	at com.sun.proxy.$Proxy16.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:193)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at stepDefinitions.RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest.java:115)
-	at ✽.Then I fill in all mandatory details(Registration.feature:21)
-... Removed 37 stack frames
+	at com.sun.proxy.$Proxy19.getCoordinates(Unknown Source)
+	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+	at methods.MyAccountHomePageMethods.goToSummerDresses(MyAccountHomePageMethods.java:18)
+	at stepDefinitions.SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses(SummerDressesTest.java:28)
+	at ✽.Then I go to Summer Dresses Page from menu Dresses-&gt;Summer Dresses(C:/WorkspaceInfy/AutomationDemo/src/test/resources/Features/SummerDresses.feature:8)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -210,54 +183,6 @@ Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">MyRunner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Summer Dresses)">
-                  </a> <!-- feature(Summer Dresses) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Summer Dresses)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(CheckOut feature)">
-                  </a> <!-- feature(CheckOut feature) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(CheckOut feature)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Login feature)">
-                  </a> <!-- feature(Login feature) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Login feature)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Sign Up feature)">
-                  </a> <!-- feature(Sign Up feature) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Sign Up feature)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -269,7 +194,7 @@ Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
 &lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
   &lt;test name=&quot;Surefire test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;MyRunner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;Parallel10IT&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -317,32 +242,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'MyRunner.TestRunner')
-data.setCell(0, 3, 144959);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'feature')
-data.setCell(1, 2, 'MyRunner.TestRunner')
-data.setCell(1, 3, 134535);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'feature')
-data.setCell(2, 2, 'MyRunner.TestRunner')
-data.setCell(2, 3, 69872);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'feature')
-data.setCell(3, 2, 'MyRunner.TestRunner')
-data.setCell(3, 3, 55268);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'feature')
-data.setCell(4, 2, 'MyRunner.TestRunner')
-data.setCell(4, 3, 45526);
+data.setCell(0, 2, 'Parallel10IT')
+data.setCell(0, 3, 204058);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -368,36 +277,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">MyRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Parallel10IT</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">feature(CheckOut feature)</span>
-                <span class="method-start">1770 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(Login feature)</span>
-                <span class="method-start">136305 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(Registration feature)</span>
-                <span class="method-start">206178 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(Sign Up feature)</span>
-                <span class="method-start">351179 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">feature(Summer Dresses)</span>
-                <span class="method-start">396706 ms</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">451976 ms</span>
+                <span class="method-start">204112 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

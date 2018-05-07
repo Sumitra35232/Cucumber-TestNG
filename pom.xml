@@ -69,6 +69,11 @@
             <artifactId>cucumber-reporting</artifactId>
             <version>3.8.0</version>
         </dependency>
+        <dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
     </dependencies>
     
     <build>
@@ -142,7 +147,7 @@
                 <version>2.20</version>
                 <configuration>         
           <testFailureIgnore>true</testFailureIgnore>
-           <forkCount>5</forkCount>
+           <forkCount>3</forkCount>
             <reuseForks>true</reuseForks>
           <includes>
           <include>**/*IT.class</include>
@@ -168,7 +173,7 @@
               <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
               <skippedFails>true</skippedFails>
               <enableFlashCharts>false</enableFlashCharts>
-              <buildNumber>2</buildNumber>
+              <buildNumber>3</buildNumber>
             </configuration>
           </execution>
         </executions>

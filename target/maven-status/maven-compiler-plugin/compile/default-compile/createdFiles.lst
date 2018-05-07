@@ -4,6 +4,7 @@ methods\AddToCartPageMethods.class
 pageObjects\MyAccoutHomePage.class
 methods\RegistrationPageMethods.class
 utilities\DriverUtil.class
+utilities\Log.class
 pageObjects\AddToCartPage.class
 pageObjects\CheckoutPage.class
 pageObjects\signUpPage.class
@@ -13,5 +14,4 @@ methods\SummerDressesPageMethods.class
 methods\SignUpMethods.class
 testBase\TestBase.class
 pageObjects\LoginPage.class
-utilities\WebEventListener.class
 utilities\TestUtil.class

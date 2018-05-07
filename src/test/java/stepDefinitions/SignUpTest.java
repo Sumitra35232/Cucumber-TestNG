@@ -39,8 +39,7 @@ public class SignUpTest extends TestBase{
 	@When("^user clicks on Sign Up$")
 	public  void user_clicks_on_Sign_Up() throws Throwable {
 
-//	  Assert.assertTrue(signUpPage.SignInButton.isDisplayed(),"Button is not displayed");
-//	  signUpPage.SignInButton.click();
+
 	  registrationPage=SignUpMethods.signUp();
 	}
 

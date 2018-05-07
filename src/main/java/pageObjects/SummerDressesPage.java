@@ -13,7 +13,7 @@ public class SummerDressesPage extends TestBase {
 	@FindBy(id="selectProductSort")
 	public static WebElement sortBy;
 	
-	@FindBy(xpath=".//span[@class='price product-price']")
+	@FindBy(xpath="//div[@class='right-block']//span[@class='price product-price']")
 	public static List<WebElement> price;
 	
 	@FindBy(id="color_20")

@@ -1,6 +1,6 @@
 Feature:  CheckOut feature
 
-@CheckOut @Demo @Test
+@CheckOut @Demo
 Scenario: To verify summer dress page
 Given the user is on registration page
 Then I enter login credentials and click on submit button

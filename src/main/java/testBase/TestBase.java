@@ -1,7 +1,6 @@
 package testBase;
 
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,10 +11,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import utilities.DriverUtil;
 import utilities.TestUtil;
-import utilities.WebEventListener;
+
 
 
 
@@ -23,14 +21,11 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public  static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+
 	
 	public TestBase(){
 		try {
 			prop = new Properties();
-//			String path="C:/WorkspaceInfy/AutomationDemo/src/main/java/config/config.properties";
-//			FileInputStream ip = new FileInputStream(path);
 			InputStream ip=this.getClass().getClassLoader().getResourceAsStream("config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
@@ -68,11 +63,7 @@ public class TestBase {
 		}
 		
 		
-		e_driver = new EventFiringWebDriver(driver);
-		// Now create object of EventListerHandler to register it with EventFiringWebDriver
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
+
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

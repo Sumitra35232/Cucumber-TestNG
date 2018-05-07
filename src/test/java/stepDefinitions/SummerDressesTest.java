@@ -2,24 +2,12 @@ package stepDefinitions;
 
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-
-import cucumber.api.DataTable;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import methods.MyAccountHomePageMethods;
 import methods.SummerDressesPageMethods;
-import pageObjects.LoginPage;
 import pageObjects.MyAccoutHomePage;
-import pageObjects.RegistrationPage;
 import pageObjects.SummerDressesPage;
-import pageObjects.signUpPage;
 import testBase.TestBase;
 
 public class SummerDressesTest extends TestBase{
@@ -27,8 +15,7 @@ public class SummerDressesTest extends TestBase{
 	
 	
 	public SummerDressesTest(){
-//		super();
-//		super.initialization();
+
 		MyAccoutHomePage.homePageInitElements();
 		SummerDressesPage.summerPageinitElements();
 		

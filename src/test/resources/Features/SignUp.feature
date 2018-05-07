@@ -1,6 +1,6 @@
 Feature: Sign Up feature
 
-@Registration @Demo
+@SignUp @Demo
 Scenario: To verify successful sign up
     Given user is present in automationpractice website
     When user clicks on Sign Up

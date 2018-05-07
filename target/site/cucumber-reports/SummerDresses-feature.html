@@ -53,8 +53,8 @@ $(document).ready(function() {
         <tbody>
           <tr class="info">
             <td>cucumber-jvm-example</td>
-                          <td>2</td>
-                        <td>06 May 2018, 21:59</td>
+                          <td>3</td>
+                        <td>07 May 2018, 14:22</td>
           </tr>
         </tbody>
       </table>
@@ -96,18 +96,18 @@ $(document).ready(function() {
 
         <tr>
       <td class="tagname"><a id="stats-Summer Dresses" href="SummerDresses-feature.html">Summer Dresses</a></td>
-            <td id="stats-number-scenarios-Summer Dresses">1</td>
-      <td id="stats-number-scenarios-passed-Summer Dresses">1</td>
-      <td id="stats-number-scenarios-failed-Summer Dresses">0</td>
-      <td id="stats-number-steps-Summer Dresses">7</td>
+            <td id="stats-number-scenarios-Summer Dresses">2</td>
+      <td id="stats-number-scenarios-passed-Summer Dresses">0</td>
+      <td id="stats-number-scenarios-failed-Summer Dresses">2</td>
+      <td id="stats-number-steps-Summer Dresses">11</td>
       <td id="stats-number-steps-passed-Summer Dresses">7</td>
-      <td id="stats-number-steps-failed-Summer Dresses"    >0</td>
-      <td id="stats-number-steps-skipped-Summer Dresses"   >0</td>
+      <td id="stats-number-steps-failed-Summer Dresses"      class="failed" >2</td>
+      <td id="stats-number-steps-skipped-Summer Dresses"      class="skipped" >2</td>
       <td id="stats-number-steps-pending-Summer Dresses"   >0</td>
       <td id="stats-number-steps-undefined-Summer Dresses" >0</td>
       <td id="stats-number-steps-missing-Summer Dresses"   >0</td>
-      <td id="stats-duration-Summer Dresses" class="duration-format">54s 565ms</td>
-      <td id="stats-status-Summer Dresses" class="passed">Passed</td>
+      <td id="stats-duration-Summer Dresses" class="duration-format">3m 05s 871ms</td>
+      <td id="stats-status-Summer Dresses" class="failed">Failed</td>
     </tr>
   </table>
 </div>
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
 <div class="container-fluid" id="report-details">
   <div class="feature-tags"></div>
-  <div class="passed">
+  <div class="failed">
     <div class="feature-line">
       <span class="feature-keyword">Feature: </span>Summer Dresses
     </div>
@@ -125,11 +125,11 @@ $(document).ready(function() {
       <div class="feature-tags"></div>
     
     <div class="passed"><span class="element-keyword">Background: </span></div>
-          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">the user is on registration page</span><span class="step-duration">46s 039ms</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">the user is on registration page</span><span class="step-duration">1m 10s 212ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I enter login credentials and click on submit button</span><span class="step-duration">02s 224ms</span></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I enter login credentials and click on submit button</span><span class="step-duration">10s 295ms</span></div>
       
               <table class="arguments-table">
                   <tr>
@@ -143,28 +143,64 @@ $(document).ready(function() {
                 </table>
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I go to Summer Dresses Page from menu Dresses-&gt;Summer Dresses</span><span class="step-duration">03s 603ms</span></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I go to Summer Dresses Page from menu Dresses-&gt;Summer Dresses</span><span class="step-duration">09s 231ms</span></div>
       
             <div></div>
       <div></div>
         
     <br>
       <div class="feature-tags"><a href="SummerDress.html">@SummerDress</a>, <a href="Demo.html">@Demo</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>Hooks.setUp()</i><span class="step-duration"></span></div>
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">To verify sort by price ascending works properly</span></div>
+          <div class="failed"><span class="step-keyword">Then  </span><span class="step-name">I select sort by price Lowest first to check its sorted properly</span><span class="step-duration">05s 662ms</span><div class="output_message"><input class="output_collapse" id="output_212158113" type="checkbox"><label for="output_212158113">java.lang.AssertionError: expected [true] but found [false]</label><div>	at org.testng.Assert.fail(Assert.java:93)<br/>	at org.testng.Assert.failNotEquals(Assert.java:512)<br/>	at org.testng.Assert.assertTrue(Assert.java:41)<br/>	at org.testng.Assert.assertTrue(Assert.java:51)<br/>	at methods.SummerDressesPageMethods.sortByAsc(SummerDressesPageMethods.java:39)<br/>	at stepDefinitions.SummerDressesTest.i_select_sort_by_price_Lowest_first_to_check_its_sorted_properly(SummerDressesTest.java:36)<br/>	at ✽.Then I select sort by price Lowest first to check its sorted properly(SummerDresses.feature:12)<br/></div></div></div>
+      
+            <div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>Hooks.tearDown()</i><span class="step-duration"></span></div>
+    <br>
+      <div class="feature-tags"></div>
     
-    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">To verify user selects a dress and change color to Blue</span></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I select  a particular dress</span><span class="step-duration">02s 301ms</span></div>
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">the user is on registration page</span><span class="step-duration">1m 01s 661ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I verify if I am landed on AddToCart page</span><span class="step-duration">021ms</span></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I enter login credentials and click on submit button</span><span class="step-duration">12s 721ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>username</td>
+                          <td>password</td>
+                      </tr>
+                  <tr>
+                          <td>customer2@gmail.com</td>
+                          <td>password1</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I go to Summer Dresses Page from menu Dresses-&gt;Summer Dresses</span><span class="step-duration">12s 582ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I change the colour to blue</span><span class="step-duration">181ms</span></div>
+        
+    <br>
+      <div class="feature-tags"><a href="SummerDress.html">@SummerDress</a>, <a href="Demo.html">@Demo</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>Hooks.setUp()</i><span class="step-duration"></span></div>
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">To verify user selects a dress and change color to Blue</span></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I select  a particular dress</span><span class="step-duration">03s 460ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I add the item to cart</span><span class="step-duration">193ms</span></div>
+          <div class="failed"><span class="step-keyword">And  </span><span class="step-name">I verify if I am landed on AddToCart page</span><span class="step-duration">042ms</span><div class="output_message"><input class="output_collapse" id="output_747258971" type="checkbox"><label for="output_747258971">java.lang.AssertionError: expected [Printed Summer Dress - My Store] but found []</label><div>	at org.testng.Assert.fail(Assert.java:93)<br/>	at org.testng.Assert.failNotEquals(Assert.java:512)<br/>	at org.testng.Assert.assertEqualsImpl(Assert.java:134)<br/>	at org.testng.Assert.assertEquals(Assert.java:115)<br/>	at org.testng.Assert.assertEquals(Assert.java:189)<br/>	at org.testng.Assert.assertEquals(Assert.java:199)<br/>	at methods.AddToCartPageMethods.validateTitle(AddToCartPageMethods.java:17)<br/>	at stepDefinitions.AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page(AddToCartTest.java:25)<br/>	at ✽.And I verify if I am landed on AddToCart page(SummerDresses.feature:22)<br/></div></div></div>
+      
+            <div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">I change the colour to blue</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">I add the item to cart</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>

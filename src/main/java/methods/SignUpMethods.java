@@ -6,9 +6,6 @@ import testBase.TestBase;
 
 public class SignUpMethods {
 
-//	public SignUpMethods(){
-//		super();
-//	}
 	
 	public static String validateSignUpPageTitle(){
 		

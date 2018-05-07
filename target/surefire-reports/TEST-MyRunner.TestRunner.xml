@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MyRunner.TestRunner" time="453.489" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MyRunner.TestRunner" time="559.726" tests="5" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk1.8.0_151\jre\bin"/>
@@ -60,76 +60,84 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="feature" classname="MyRunner.TestRunner" time="134.533"/>
-  <testcase name="feature" classname="MyRunner.TestRunner" time="69.872"/>
-  <testcase name="feature" classname="MyRunner.TestRunner" time="145.002">
-    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;id_gender1&quot;}&#10;  (Session info: chrome=66.0.3359.139)&#10;  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;DESKTOP-K9519T8&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}&#10;Session ID: 612eefd0c808b1f90c7d1fa3abff67c3&#10;*** Element info: {Using=id, value=id_gender1}" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"id_gender1"}
+  <testcase name="feature" classname="MyRunner.TestRunner" time="72.274">
+    <failure message="cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.RegistrationTest" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.RegistrationTest
+Caused by: cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.RegistrationTest
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.TimeoutException: 
+timeout
   (Session info: chrome=66.0.3359.139)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'DESKTOP-K9519T8', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
-*** Element info: {Using=id, value=id_gender1}
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"id","selector":"id_gender1"}
-  (Session info: chrome=66.0.3359.139)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'DESKTOP-K9519T8', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
-*** Element info: {Using=id, value=id_gender1}
+Session ID: 4aad2f1432e199eefdc3d68372332bf0
 </failure>
-    <system-out><![CDATA[Feature: Registration feature
-We are on Registration Page
+    <system-out><![CDATA[Feature: CheckOut feature
 
-  Background:                              # Registration.feature:3
-    Given the user is on registration page # RegistrationTest.the_user_is_on_registration_page()
-Actual error is An account using this email address has already been registered. Please enter a valid password or request a new one.
-
-  @ExistingUserRegistration @Demo
-  Scenario: To test unsuccessful registration of an already registered user # Registration.feature:9
-    When I enter  an already registered emailID                             # RegistrationTest.i_enter_an_already_registered_emailID(DataTable)
-    And I click on CreateAccount button                                     # RegistrationTest.i_click_on_CreateAccount_button()
-    Then I validate the error message received                              # RegistrationTest.i_validate_the_error_message_received()
-
-  @TestIt @Demo
-  Scenario Outline: Test successful registration of a new user            # Registration.feature:18
-    Then I enter email address of new user as "<customerEmail>"
-    And I click on CreateAccount button
-    Then I fill in all mandatory details
-    When I click on Register button and redirected to MyAccount Home Page
-
-    Examples: 
-We are on Registration Page
-
-  Background:                              # Registration.feature:3
-    Given the user is on registration page # RegistrationTest.the_user_is_on_registration_page()
-
-  @Demo @TestIt
-  Scenario Outline: Test successful registration of a new user            # Registration.feature:27
-    Then I enter email address of new user as "customer501@gmail.com"     # RegistrationTest.i_enter_email_address_of_new_user_as(String)
-    And I click on CreateAccount button                                   # RegistrationTest.i_click_on_CreateAccount_button()
-    Then I fill in all mandatory details                                  # RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest$userDetails>)
-      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"id_gender1"}
+  @CheckOut @Demo
+  Scenario: To verify summer dress page                                # CheckOut.feature:4
+    Given the user is on registration page                             # RegistrationTest.the_user_is_on_registration_page()
+      cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.RegistrationTest
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+      	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+      	at org.testng.TestRunner.run(TestRunner.java:602)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+      	at org.testng.TestNG.runSuites(TestNG.java:1144)
+      	at org.testng.TestNG.run(TestNG.java:1115)
+      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeLazy(TestNGDirectoryTestSuite.java:123)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:90)
+      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+      Caused by: java.lang.reflect.InvocationTargetException
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+      	... 40 more
+      Caused by: org.openqa.selenium.TimeoutException: timeout
         (Session info: chrome=66.0.3359.139)
         (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
       Command duration or timeout: 0 milliseconds
-      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
       Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
       System info: host: 'DESKTOP-K9519T8', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
       Driver info: org.openqa.selenium.chrome.ChromeDriver
       Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-      Session ID: 612eefd0c808b1f90c7d1fa3abff67c3
-      *** Element info: {Using=id, value=id_gender1}
+      Session ID: 4aad2f1432e199eefdc3d68372332bf0
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
       	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -142,34 +150,202 @@ We are on Registration Page
       	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
       	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
       	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
-      	at org.openqa.selenium.By$ById.findElement(By.java:218)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-      	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+      	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:324)
+      	at testBase.TestBase.initialization(TestBase.java:73)
+      	at stepDefinitions.RegistrationTest.<init>(RegistrationTest.java:24)
+      	... 45 more
+
+    Then I enter login credentials and click on submit button          # RegistrationTest.i_enter_login_credentials_and_click_on_submit_button(DataTable)
+    Then I go to Summer Dresses Page from menu Dresses->Summer Dresses # SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses()
+    Then I select  a particular dress                                  # SummerDressesTest.i_select_a_particular_dress()
+    And I verify if I am landed on AddToCart page                      # AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page()
+    Then I change the colour to blue                                   # AddToCartTest.i_change_the_colour_to_blue()
+    And I add the item to cart                                         # AddToCartTest.i_add_the_item_to_cart()
+    Then I proceed to checkout                                         # CheckoutTest.i_proceed_to_checkout()
+    And I verify details on shopping cart summary page                 # CheckoutTest.i_verify_details_on_shopping_cart_summary_page()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 29064
+Only local connections are allowed.
+May 07, 2018 2:11:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[1525682537.670][SEVERE]: Timed out receiving message from renderer: 28.439
+[1525682537.688][SEVERE]: Timed out receiving message from renderer: -0.020
+]]></system-err>
+  </testcase>
+  <testcase name="feature" classname="MyRunner.TestRunner" time="83.301"/>
+  <testcase name="feature" classname="MyRunner.TestRunner" time="148.953"/>
+  <testcase name="feature" classname="MyRunner.TestRunner" time="65.296">
+    <failure message="cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.SignUpTest" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.SignUpTest
+Caused by: cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.SignUpTest
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'DESKTOP-K9519T8', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
+Session ID: bde0d680a70ae52138e9d5120827e445
+</failure>
+    <system-out><![CDATA[Feature: Sign Up feature
+
+  @SignUp @Demo
+  Scenario: To verify successful sign up                 # SignUp.feature:4
+    Given user is present in automationpractice website  # SignUpTest.user_is_present_in_automationpractice_website()
+      cucumber.runtime.CucumberException: Failed to instantiate class stepDefinitions.SignUpTest
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+      	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
       	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
       	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:109)
-      	at com.sun.proxy.$Proxy16.findElement(Unknown Source)
-      	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:193)
-      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-      	at com.sun.proxy.$Proxy19.click(Unknown Source)
-      	at stepDefinitions.RegistrationTest.i_fill_in_all_mandatory_details(RegistrationTest.java:115)
-      	at ?.Then I fill in all mandatory details(Registration.feature:21)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+      	at org.testng.TestRunner.run(TestRunner.java:602)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+      	at org.testng.TestNG.runSuites(TestNG.java:1144)
+      	at org.testng.TestNG.run(TestNG.java:1115)
+      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeLazy(TestNGDirectoryTestSuite.java:123)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:90)
+      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+      Caused by: java.lang.reflect.InvocationTargetException
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+      	... 40 more
+      Caused by: org.openqa.selenium.TimeoutException: timeout
+        (Session info: chrome=66.0.3359.139)
+        (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+      System info: host: 'DESKTOP-K9519T8', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\SHRAWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
+      Session ID: bde0d680a70ae52138e9d5120827e445
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+      	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:324)
+      	at testBase.TestBase.initialization(TestBase.java:73)
+      	at stepDefinitions.SignUpTest.<init>(SignUpTest.java:24)
+      	... 45 more
 
-    When I click on Register button and redirected to MyAccount Home Page # RegistrationTest.i_click_on_Register_button_and_redirected_to_MyAccount_Home_Page()
+    When user clicks on Sign Up                          # SignUpTest.user_clicks_on_Sign_Up()
+    Then user should get redirected to Registartion Page # SignUpTest.user_should_get_redirected_to_Registartion_Page()
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 24006
+    <system-err><![CDATA[Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 36369
 Only local connections are allowed.
-May 06, 2018 9:55:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 07, 2018 2:16:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 48644
+[1525682835.215][SEVERE]: Timed out receiving message from renderer: 6.623
+[1525682835.217][SEVERE]: Timed out receiving message from renderer: -0.054
+]]></system-err>
+  </testcase>
+  <testcase name="feature" classname="MyRunner.TestRunner" time="187.442">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+</failure>
+    <system-out><![CDATA[Feature: Summer Dresses
+We are on Registration Page
+We are on SummerDresses Page
+
+  Background:                                                          # SummerDresses.feature:3
+    Given the user is on registration page                             # RegistrationTest.the_user_is_on_registration_page()
+    Then I enter login credentials and click on submit button          # RegistrationTest.i_enter_login_credentials_and_click_on_submit_button(DataTable)
+    Then I go to Summer Dresses Page from menu Dresses->Summer Dresses # SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses()
+Size of price is 3
+Values in price is $28.98
+Values in price is $30.50
+Values in price is $16.40
+
+  @SummerDress @Demo
+  Scenario: To verify sort by price ascending works properly              # SummerDresses.feature:11
+    Then I select sort by price Lowest first to check its sorted properly # SummerDressesTest.i_select_sort_by_price_Lowest_first_to_check_its_sorted_properly()
+      java.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:93)
+      	at org.testng.Assert.failNotEquals(Assert.java:512)
+      	at org.testng.Assert.assertTrue(Assert.java:41)
+      	at org.testng.Assert.assertTrue(Assert.java:51)
+      	at methods.SummerDressesPageMethods.sortByAsc(SummerDressesPageMethods.java:39)
+      	at stepDefinitions.SummerDressesTest.i_select_sort_by_price_Lowest_first_to_check_its_sorted_properly(SummerDressesTest.java:36)
+      	at ?.Then I select sort by price Lowest first to check its sorted properly(SummerDresses.feature:12)
+
+We are on Registration Page
+We are on SummerDresses Page
+
+  Background:                                                          # SummerDresses.feature:3
+    Given the user is on registration page                             # RegistrationTest.the_user_is_on_registration_page()
+    Then I enter login credentials and click on submit button          # RegistrationTest.i_enter_login_credentials_and_click_on_submit_button(DataTable)
+    Then I go to Summer Dresses Page from menu Dresses->Summer Dresses # SummerDressesTest.i_go_to_Summer_Dresses_Page_from_menu_Dresses_Summer_Dresses()
+
+  #@SummerDress @Demo
+  #Scenario: To verify sort by price descending works properly
+  #Then I select sort by price Highest first to check its sorted properly
+  @SummerDress @Demo
+  Scenario: To verify user selects a dress and change color to Blue # SummerDresses.feature:20
+    Then I select  a particular dress                               # SummerDressesTest.i_select_a_particular_dress()
+    And I verify if I am landed on AddToCart page                   # AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page()
+      java.lang.AssertionError: expected [Printed Summer Dress - My Store] but found []
+      	at org.testng.Assert.fail(Assert.java:93)
+      	at org.testng.Assert.failNotEquals(Assert.java:512)
+      	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+      	at org.testng.Assert.assertEquals(Assert.java:115)
+      	at org.testng.Assert.assertEquals(Assert.java:189)
+      	at org.testng.Assert.assertEquals(Assert.java:199)
+      	at methods.AddToCartPageMethods.validateTitle(AddToCartPageMethods.java:17)
+      	at stepDefinitions.AddToCartTest.i_verify_if_I_am_landed_on_AddToCart_page(AddToCartTest.java:25)
+      	at ?.And I verify if I am landed on AddToCart page(SummerDresses.feature:22)
+
+    Then I change the colour to blue                                # AddToCartTest.i_change_the_colour_to_blue()
+    And I add the item to cart                                      # AddToCartTest.i_add_the_item_to_cart()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 43939
 Only local connections are allowed.
-May 06, 2018 9:56:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 07, 2018 2:17:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 6992
+Only local connections are allowed.
+May 07, 2018 2:18:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
   </testcase>
-  <testcase name="feature" classname="MyRunner.TestRunner" time="45.525"/>
-  <testcase name="feature" classname="MyRunner.TestRunner" time="55.269"/>
 </testsuite>

@@ -3,6 +3,17 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 673415,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
         "line": 4,
         "name": "To verify successful sign up",
         "description": "",
@@ -10,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 3633479171,
+              "duration": 700973777,
               "status": "passed"
             },
             "match": {
@@ -23,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50511299222,
+              "duration": 46802133438,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 3283331046,
+              "duration": 11598603514,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 1889902951,
+              "duration": 139528332,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +72,7 @@
         "tags": [
           {
             "line": 3,
-            "name": "@Registration"
+            "name": "@SignUp"
           },
           {
             "line": 3,

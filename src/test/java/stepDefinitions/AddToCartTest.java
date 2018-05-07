@@ -1,15 +1,14 @@
 package stepDefinitions;
 
 
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import cucumber.api.java.en.Then;
-import gherkin.deps.com.google.gson.annotations.Until;
+
 import methods.AddToCartPageMethods;
 import pageObjects.AddToCartPage;
 import pageObjects.SummerDressesPage;
-import testBase.TestBase;
+
 
 public class AddToCartTest {
 	
@@ -36,7 +35,7 @@ public class AddToCartTest {
 	public void i_add_the_item_to_cart() throws Throwable {
 	 
 		AddToCartPageMethods.addToCart();
-//		AddToCartPage.closeConfirmation.click();
+
 	}
 
 
