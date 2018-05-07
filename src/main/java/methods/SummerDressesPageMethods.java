@@ -1,12 +1,18 @@
 package methods;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 
 import pageObjects.AddToCartPage;
@@ -19,7 +25,31 @@ public class SummerDressesPageMethods extends TestBase {
 	{
 		Select sortByPrice=new Select(SummerDressesPage.sortBy);
 		sortByPrice.selectByVisibleText("Price: Lowest first");
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
+		WebDriverWait wait=new WebDriverWait(driver,50);
+		
+		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
+		      @Override
+		      public Boolean apply(WebDriver driver) {
+		        try {
+		          return ((Long)((JavascriptExecutor)driver).executeScript("return jQuery.active") == 0);
+		        }
+		        catch (Exception e) {
+		          // no jQuery present
+		          return true;
+		        }
+		      }
+		    };
+		
+		 ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
+		      @Override
+		      public Boolean apply(WebDriver driver) {
+		        return ((JavascriptExecutor)driver).executeScript("return document.readyState")
+		        .toString().equals("complete");
+		      }
+		 };
+		
+		Assert.assertTrue(wait.until(jQueryLoad) && wait.until(jsLoad));
 		System.out.println("Size of price is " +SummerDressesPage.price.size());
 		List<String> prices = new ArrayList<String>();
 		for (WebElement e : SummerDressesPage.price)

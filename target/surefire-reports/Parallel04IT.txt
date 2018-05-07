@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Parallel04IT
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.822 s <<< FAILURE! - in Parallel04IT
-feature(Parallel04IT)  Time elapsed: 35.626 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.AssertionError: expected [My Store] but found []
-Caused by: java.lang.AssertionError: expected [My Store] but found []
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 76.499 s - in Parallel04IT
